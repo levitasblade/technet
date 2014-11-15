@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* CSS Document */
+.im{
+	background:#000;
+	position: fixed;
+ 	bottom:0;
+	right:0;
+ 	width:320px;
+	height:375px;
+	font:14px/1.5 AppleGothic,Arial,'Microsoft Yahei','Simsun';
+	z-index:102;
+ 	}
+.im_top{
+	height:22px;
+	line-height:22px;
+	padding:10px;
+	color:#fff;
+	position:relative;
+	}
+.im_topTitle{
+ 	line-height:22px;
+	}
+.im_topIcon{
+	position:absolute;
+	right:10px;
+	top:10px;
+	}
+.im_minimize,.im_close{
+	width:22px;
+	height:22px;
+	display:inline-block;
+	background:url(../icon/imIcon.png) no-repeat 3px 5px;
+	}
+.im_close{
+	background:url(../icon/imIcon.png) no-repeat -24px 5px;
+	}
+.im_minimize:hover,.im_close:hover{
+	background-color:#333;
+	}
+.im_dialogueMain{
+	position:absolute;
+	top:42px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	background:#fff;
+ 	}
+/*  */
+
+.im_textMain{
+	padding:20px;
+	}
+.im_textList{
+	margin:0;
+	list-style:none;
+	}
+.im_textList input{
+	border:1px solid #ccc;
+	outline: none;
+	height:16px;
+	padding:8px 2px;
+	border-radius:0;
+	}
+.im_textListLeft{
+	width:78px;
+	line-height:35px;
+	float:left;
+	}
+.im_textListRight{
+	margin-left:75px;
+	line-height:35px;
+	}
+.im_textList{
+	padding:20px 0 0 0;
+	}
+.im_textList select{
+ 	padding:3px;
+	width:155px;
+	border-radius:0;
+	border:1px solid #ccc;
+	}
+.im_btn{
+	display:inline-block;
+	background:#60C8FF;
+	height:44px;
+	line-height:44px;
+	font-size:14px;
+	color:#fff;
+	padding:0 20px;
+	text-decoration:none;
+	text-align:center;
+	min-width:100px;
+	}
+.im_btn:hover{
+	background:#2FB6FF;
+	color:#fff;
+	}
+.im_radioList{
+	padding:5px 0 0 0;}
+.im_radioList ul{
+	margin:0;
+	list-style:none;
+	}
+.im_radioList li{
+	width:50%;
+	float:left;
+	}
+.im_radioList li input{
+	margin-left:0;
+ 	}
+.im_feedback{
+	padding:10px 0 0 0;
+	}
+.im_feedbackLeft{
+	width:45px;
+	float:left;
+	}
+.im_feedbackRight{
+	margin-left:45px;
+	}
+.im_feedbackText{
+	border:none;
+	border-radius:0;
+	border:1px solid #ccc;
+	resize:none;
+	outline: none;
+	width:90%;
+	height:50px;
+	}
+@media (max-width: 480px){
+	.im{
+		bottom:0;
+		right:0;
+		left:0;
+		width:auto;
+		height:auto;
+		top:auto;
+		height:100%;
+ 	}
+}
+
+/* tools */
+.tools{
+	position:fixed;
+	width:28px;
+	right:0;
+	bottom:50px;
+	z-index:101;
+	}
+.t_newMessage,
+.t_openIm,
+.t_share,
+.t_backTop{
+	width:28px;
+	height:28px;
+	display:block;
+	background-color:rgba(0,0,0,0.8);
+	border-bottom:1px solid rgba(255,255,255,0.1);
+	background-image:url(../icon/imIcon.png);
+	background-repeat:no-repeat;
+	}
+.t_newMessage{
+	background-color:red;}
+.t_newMessage:hover,
+.t_openIm:hover,
+.t_share:hover,
+.t_backTop:hover{
+	background-color:rgba(0,0,0,1);
+	}
+.t_newMessage{
+	background-position:4px -43px;
+	}
+.t_openIm{
+	background-position:7px -130px;
+	}
+.t_share{
+	background-position:4px -72px;
+	}
+.t_backTop{
+	background-position:5px -100px;
+	}
+/* share */
+.tool_share{
+	position:fixed;
+	width:320px;
+	right:0;
+	bottom:0;
+	z-index:101;
+	background:rgba(0,0,0,0.9);
+	}
+.tool_shareHead{
+	background:#000;
+	height:40px;
+	font-size:14px;
+	text-align: center;
+	color:#fff;
+	line-height:40px;
+	position:relative;
+	}
+.tool_shareClose{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	background:url(../icon/imIcon.png) no-repeat -28px 1px;
+	opacity:0.7;
+	position:absolute;
+	right:10px;
+	top:13px;
+	}
+.tool_shareClose:hover{
+	opacity:1;
+	}
+.tool_shareMain{
+	padding:30px 0 0 0;}
+.tool_shareMain ul{
+	margin:0;
+	list-style:none;
+	}
+.tool_shareMain li{
+	width:25%;
+	float:left;
+	padding-bottom:30px;
+	}
+.tool_shareMain li a{
+	font-size:12px;
+	color:#999;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	width:50px;
+	margin:0 auto;
+	}
+
+
+.tool_shareMain li a i{
+	display: inline-block;
+ 	height:50px;
+	width:50px;
+	background-color:rgba(255,255,255,0.2);
+	border-radius:4px;
+	background-position: center center;
+	background-repeat:no-repeat;
+	margin-bottom:4px;
+	}
+.tool_shareMain li a:hover i{
+	background-color:rgba(255,255,255,0.5);
+	}
+.tool_shareMain li a:hover{
+	color:#ccc;
+	text-decoration:none;
+	}
+
+.tool_share_sina{
+	background-image:url(../images/sina_icon.png);
+	}
+.tool_share_rr{
+	background-image:url(../images/ren_icon.png);
+	}
+.tool_share_kx{
+	background-image:url(../images/kx_icon.png);
+	}
+.tool_share_db{
+	background-image:url(../images/db_icon.png);
+	}
+.tool_share_wx{
+	background-image:url(../images/wx_icon.png);
+	}
+.tool_share_qqwb{
+	background-image:url(../images/t_qq_icon.png);
+	}
+.tool_share_qzone{
+	background-image:url(../images/qzone_icon.png);
+	}
+.tool_share_ewm{
+	background-image:url(../images/ewm_icon.png);
+	}
+	
+@media (max-width: 480px) {
+	.tool_share{
+		position: fixed;
+		width:auto;
+		right:0;
+		bottom:0;
+		top:auto;
+		height:100%;
+		left:0;
+		}
+	}
+

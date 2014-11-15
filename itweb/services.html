@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>服務</title>
+<meta content="服務,technet," name="description" />
+<meta content="服務,technet" name="keywords" />
+<meta name="author" content="TechNet Trading Co. Ltd.">
+<meta name="Copyright" content="TechNet Trading Co. Ltd.">
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" href="" />
+<!-- <script src="http://1251132871.cdn.myqcloud.com/1251132871/js/jquery-1.9.1.js"></script>
+<script src="http://1251132871.cdn.myqcloud.com/1251132871/js/jquery.json-2.2.js"></script>
+<script src="http://1251132871.cdn.myqcloud.com/1251132871/js/common.js"></script> -->
+<script>
+                var click = 'click',
+                        customMode = false,
+                        supportTouch = false;
+                if ("ontouchend" in document) {
+                        supportTouch = true;
+                        if(navigator.userAgent.indexOf('QQ')<0){
+                        document.write('<script src="http://1251132871.cdn.myqcloud.com/1251132871/js/vMouse.js"><\/script>');
+                        click = 'vclick';
+                        };
+                        $.fn.extend({
+                                niceScroll: function() {
+                                        $(this).css({
+                                                '-webkit-overflow-scrolling': 'touch',
+                                                'overflow': 'auto'
+                                        });
+                                },
+                                getNiceScroll: function() {
+                                        return ({
+                                                hide: $.noop,
+                                                show: $.noop,
+                                                remove: $.noop,
+                                                resize: $.noop
+                                        });
+                                }
+                        });
+                }
+                ;
+               if (navigator.userAgent.match(/msie [9]/i)) {
+                        document.write('<script src="http://1251132871.cdn.myqcloud.com/1251132871/js/modernizr.js"><\/script>');
+                }
+                ;
+
+                var imgErrorSrc = '/static/images/imgError_pic.png',
+                        rpcJS = 'http://1251132871.cdn.myqcloud.com/1251132871/js/phprpc.js',
+                        staticPath = '/static',
+                        youkuPlayerUrl = '/?c=custom&a=youkuPlayer&vid=',
+                        siteAjaxURL = '/?c=siteAjax',
+                        shareURL = 'http://api.bshare.cn/share/{shareTo}?url={url}&title=发现一个好东东，大家一起分享：',
+                        qrcodeApi = 'http://tuweia.cn/api/qrcode.php?level=H&size=15&data=';
+
+        </script>
+<script src="http://1251132871.cdn.myqcloud.com/1251132871/js/tuweiaSite.js"></script>
+<script>
+                var cartQuantity =0;//购物车数量
+                ;
+                function gotoSingnin(callback) {
+                        Confirm('您还没有登录，请登录后继续', function() {
+                                $.cookie('signinBack', window.location.href, {path: '/'});
+                                window.location.href = '/?c=default&a=view&ac=account_signin';
+                        }, '', {
+                                confirmText: '立即登录',
+                                cancelText: '取消'
+                        });
+                }
+        </script>
+<link href="css/webSite.css" rel="stylesheet" type="text/css" />
+<link href="css/icon.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" id="skinLink" />
+<style>#headerWrapper{} @media (min-width: 480px) and (max-width: 767px){#headerWrapper{} } @media (max-width: 479px){#headerWrapper{} } #headerContainer{max-width:100%;padding-left:0px;padding-right:0px;} #main{padding-bottom:0px;} #mainContainer{padding-left:0px;padding-right:0px;max-width:100%;background-color:#EBEBEB;} #footer{padding-top:0px;padding-bottom:0px;} #footerWrapper{} #footerContainer{background-color:#104281;} #app_E91635257959232294{margin-top:-10px;} @media (min-width: 480px) and (max-width: 767px){#app_E91635257959232294{text-align:center;} } @media (max-width: 479px){#app_E91635257959232294{text-align:center;} } #app_E91635262822035611 .con_body{background-color:transparent;} #app_E91635262822035611 li{border-right-color:\;border-right-width:0px;border-left-width:0px;} #app_E91635262822035611 li a,#app_E91635262822035611 li a:link{color:#000000;font-size:14px;} #app_E91635262822035611 li a:hover{color:#ffffff;} #app_E91635262822035611 li.selected{background-color:#000000;} #app_E91635262822035611 li.selected a,#app_E91635262822035611 li.selected a:link{color:#ffffff;} #app_E91635262822035611 li:hover{background-color:#000000;} @media (min-width: 480px) and (max-width: 767px){#app_E91635262822035611 li{border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;} } @media (max-width: 479px){#app_E91635262822035611 li{border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;} } #app_E91635262822035611{text-align:right;} @media (min-width: 480px) and (max-width: 767px){#app_E91635262822035611{margin-top:20px;border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;} } @media (max-width: 479px){#app_E91635262822035611{margin-top:20px;} } #el_1410244112906vjdw1{max-width:1200px;margin-top:30px;margin-bottom:0px;padding-left:10px;padding-right:10px;} @media (min-width: 480px) and (max-width: 767px){#el_1410244112906vjdw1{margin-bottom:15px;} } @media (max-width: 479px){#el_1410244112906vjdw1{margin-bottom:15px;} } #el_14102441129072sy82{border-bottom-style:solid;border-bottom-color:#000000;border-bottom-width:2px;background-color:#104281;padding-top:20px;} #app_E90954441905429380 .con_header{border-bottom-width:0px;} #app_E90954441905429380 .appTitle  h2{background-color:#8DB3EA;padding-bottom:25px;padding-top:25px;color:#ffffff;padding-left:20px;} @media (min-width: 480px) and (max-width: 767px){#app_E90954441905429380 .appTitle  h2{padding-top:10px;padding-bottom:10px;} } @media (max-width: 479px){#app_E90954441905429380 .appTitle  h2{padding-top:10px;padding-bottom:10px;} } #app_E90954441905429380 .articleList li{list-style-type:none;padding-left:30px;background-image:url(http://file.tuweia.cn/M00/00/83/CoPea1QX68uAWynNAACsVdd_dek233.png);background-position:center left;background-repeat:no-repeat;} #app_E90954441905429380 .articleList li a,#app_E90954441905429380 .articleList li a:link{line-height:40px;color:#656565;} #app_E90954441905429380 .articleList li a:hover{color:#E9A52A;} #app_E90954441905429380 .articleList li:hover{background-image:url(http://file.tuweia.cn/M00/00/83/CoPea1QX68uAB84JAACiogbDV1M925.png);background-position:center left;background-repeat:no-repeat;} #app_E90954441905429380{background-color:#ffffff;} @media (min-width: 480px) and (max-width: 767px){#app_E90954441905429380{margin-top:0px;} } @media (max-width: 479px){#app_E90954441905429380{margin-top:0px;} } #app_E90954445145016382 .con_header{border-bottom-width:1px;} #app_E90954445145016382 .appTitle  h2{color:#8DB3EA;padding-top:5px;padding-bottom:5px;} #app_E90954445145016382 .articleText{line-height:30px;color:#656565;} #app_E90954445145016382{padding-top:20px;padding-bottom:30px;padding-left:20px;padding-right:20px;} #el_1410254501882b91l3{background-color:#ffffff;} #el_1410245791826o8ct5{max-width:1200px;padding-left:10px;padding-right:10px;padding-bottom:50px;} #el_1410245791827c50w6{padding-top:20px;padding-bottom:2%;} #app_E91637545274151481{color:#000000;} #app_E91637545274151481 a,#app_E91637545274151481 a:link{color:#000000;} @media (max-width: 479px){#app_E91637545274151481{text-align:center;} } #app_E91637551290997123{text-align:right;color:#000000;} @media (max-width: 479px){#app_E91637551290997123{text-align:center;} } #el_1410837566216caic23{} #el_14102508018331x321{max-width:1200px;padding-left:10px;padding-right:10px;padding-top:30px;padding-bottom:30px;} #el_14102508018357ylh2{border-top-style:solid;border-top-width:2px;border-top-color:#000000;} @media (min-width: 480px) and (max-width: 767px){#el_14102508018357ylh2{margin-top:0px;} } @media (max-width: 479px){#el_14102508018357ylh2{margin-top:0px;} } </style></head>
+<body id="body">
+<script>
+                var templatemode = '';
+                if (templatemode && this == top && $(window).width() >= 1024) {
+                        window.location.href = '/?c=home&a=preview&url=' + encodeURIComponent(window.location.href);
+                }
+                ;
+        </script>
+<div id="layout" class="layout">
+<div id="wrapper" class="wrapper" path="wrapper" static="root" data-del="false">
+<div id="container" class="container" path="container" static="wrapper" data-del="false">
+<header id="header" class="header" path="header" static="root" data-del="false">
+<div id="headerWrapper" class="headerWrapper" path="wrapper" static="header" data-del="false">
+<div id="headerContainer" class="headerContainer" path="container" static="headerWrapper" data-del="false">
+<div id="el_14102441129072sy82" class="row" role="dragEl" path="row"><div class="rowPatch"><div class="span12"><div class="boxBlock"><div id="el_1410244112906vjdw1" class="elementContainer" path="column"><div column_max479="1" column_480_767="1" column_768_960="no" id="el_1410835281525qqxt2" class="row" role="dragEl" path="row"><div class="rowPatch"><div class="span2"><div class="boxBlock"><div id="el_141083528152251fh1" class="elementContainer" path="column"><div class="appWrapper" data-events='' data-content="json" path="app" role="dragEl" id="app_E91635257959232294" data-appid="logo" data-type="widget"><div class="appMask"></div><div class="appContent"><div class=""><div class="container"><a href="/"><img src="logo/logo_pc.png" data-pc="logo/logo_pc.png" data-phone="logo/logo_phone.png" role="logo" style="display:block;"></a>
+<script>
+        ;
+        (function($) {
+                var id = 'app_E91635257959232294';
+                appReady[id] = function() {
+                        resizeLogo('#' + id);
+                };
+        })(jQuery);
+</script>
+</div></div></div><script>
+        ;(function($){
+             var id="app_E91635257959232294",
+                 $options={"pc_src":"\/logo\/logo_pc.png","phone_src":"\/logo\/logo_phone.png","styles":{"style":{"appContent":[]}},"appTempId":"app_E91635257959232294","websiteId":"5462d4ca2034da52198b4568","pageId":"5462d59b2034da5a198b4591"};
+             appInit(id,$options);
+         })(jQuery);
+        </script>
+</div><div id="app_E91635257959232294_style" style="display:none;"></div><div id="el_141083528152251fh1_style" style="display:none;"></div></div></div></div>
+<div class="span10"><div class="boxBlock"><div id="el_141083652662713af3" class="elementContainer" path="column"><div class="appWrapper" data-events='' data-content="json" path="app" role="dragEl" id="app_E91635262822035611" data-appid="nav" data-type="widget"><div class="appMask"></div><div class="appContent"><div class=""><div class="container"><div class="navBar nav_1">
+<div class="con_body">
+<ul>
+<li class=" " data-index="0"><a href="http://localhost/itweb/test.html">網站首頁</a></li>
+<li class=" " data-index="1"><a href="http://localhost/itweb/about-us.html">關於我們</a></li>
+<li class=" " data-index="2"><a href="http://localhost/itweb/products.html">產品</a></li>
+<li class="selected " data-index="3"><a href="http://localhost/itweb/services.html">服務</a></li>
+<li class=" " data-index="4"><a href="http://localhost/itweb/business-partners.html">合作夥伴</a></li>
+<li class=" " data-index="5"><a href="http://localhost/itweb/contact-us.html">聯絡我們</a></li>
+<li class=" " data-index="6"><a href="http://localhost/itweb/site-map.html">網站地圖</a></li>
+</ul>
+</div>
+</div>
+<script>
+        ;
+        (function($) {
+                var id = 'app_E91635262822035611',
+                        moreText = '更多';
+                appReady[id] = function() {
+                        var nav = $('#' + id + ' div.navBar ul'),
+                                itemsData =[{"name":"\u7f51\u7ad9\u9996\u9875","url":"\/c\/default\/pageId\/5462d59b2034da5a198b459e","taix":1,"pageId":"5462d59b2034da5a198b459e","id":{"$id":"53e3650a833b151b288b4567"}},{"name":"\u5173\u4e8e\u6211\u4eec","url":"\/c\/default\/pageId\/5462d59b2034da5a198b4591","taix":2,"pageId":"5462d59b2034da5a198b4591","id":{"$id":"540ec7a42034daa73a8b460e"}},{"name":"\u6700\u65b0\u8d44\u8baf","url":"\/c\/default\/pageId\/5462d59b2034da5a198b4590","taix":3,"pageId":"5462d59b2034da5a198b4590","id":{"$id":"5418fba42034daad5a8b4588"}},{"name":"\u4ea7\u54c1\u670d\u52a1","url":"\/c\/default\/pageId\/5462d59b2034da5a198b4594","taix":4,"pageId":"5462d59b2034da5a198b4594","id":{"$id":"541806d42034daf1528b4567"}},{"name":"\u4ea7\u54c1\u4f53\u9a8c","url":"\/c\/default\/pageId\/5462d59b2034da5a198b4593","taix":5,"pageId":"5462d59b2034da5a198b4593","id":{"$id":"5418f9062034da2c5b8b4571"}},{"name":"\u6210\u529f\u6848\u4f8b","url":"\/c\/default\/pageId\/5462d59b2034da5a198b458f","taix":6,"pageId":"5462d59b2034da5a198b458f","id":{"$id":"54192e242034dafc748b45af"}},{"name":"\u670d\u52a1\u6d41\u7a0b","url":"\/c\/default\/pageId\/5462d59b2034da5a198b4595","taix":7,"pageId":"5462d59b2034da5a198b4595","id":{"$id":"541938b92034daa9798b45fd"}}],
+                                zIndex = nav.parent().css('zIndex'),
+                                delayRemove = '',
+                                resetNav = function() {
+                                        if (nav.find('li.selected').length) {
+                                                var current = $('li:not(.more)', nav).index(nav.find('li.selected'));
+                                                nav.html(nav.data('html'));
+                                                $('li.selected', nav).removeClass('selected');
+                                                $('li:eq(' + current + ')', nav).addClass('selected');
+                                                if ($(window).width() < 768) {
+                                                        $('li.selected', nav).prependTo(nav);
+                                                }
+                                        } else {
+                                                nav.html(nav.data('html'));
+                                                if ($(window).width() < 768) {
+                                                        $('li:eq(0)', nav).addClass('selected');
+                                                }
+                                        }
+                                },
+                                resizeNav = function() {
+                                        var uw = nav.width(),
+                                                ww = $(window).width();
+
+                                        if (ww >= 768) {
+                                                nav.data('state', 'pc');
+                                                resetNav();
+                                                var w = 0,
+                                                        eq = 0;
+                                                $('li', nav).each(function(i, item) {
+                                                        w += $(this).outerWidth() + parseInt($(this).css('margin-left')) + parseInt($(this).css('margin-right'));
+                                                        if (w > uw - 2) {
+
+                                                                eq = i;
+                                                                return false;
+                                                        }
+                                                        ;
+
+                                                });
+                                                if (eq > 0) {
+                                                        nav.html('<li class="more"><a href="javascript:;">' + moreText + '</a><ul class="moreNav hidden-phone"></ul></li>');
+
+                                                        var more = nav.find('li.more'),
+                                                                temp = $('<div></div>').html(nav.data('html'));
+
+                                                        temp.find('li').each(function(i) {
+
+                                                                if (i < eq - 1) {
+                                                                        $(this).insertBefore(more);
+                                                                } else {
+                                                                        $(this).appendTo($('ul', more));
+                                                                }
+
+                                                        });
+
+                                                }
+                                                ;
+
+                                        } else if (nav.data('state') != 'phone') {
+                                                nav.data('state', 'phone');
+                                                resetNav();
+                                        }
+                                },
+                                showHideContent = function(target) {
+                                        if (target.hasClass('mouseenter')) {
+                                                clearTimeout(delayRemove);
+                                        } else {
+                                                removeHideContent($('li.mouseenter', nav));
+                                                target.addClass('mouseenter');
+                                                var el;
+                                                if (!target.data('hideContentEl')) {
+                                                        el = $('<div class="navHideContent moreNav" style="display:none;" >' + itemsData[target.data('index')]['hideContent'] + '</div>');
+                                                        target.data('hideContentEl', el);
+                                                        el.appendTo('body').on({
+                                                                mouseenter: function() {
+                                                                        showHideContent(target);
+                                                                        if (target.parent().hasClass('moreNav')) {
+                                                                                target.parents('li.more:first').addClass('over selected');
+                                                                        }
+                                                                },
+                                                                mouseleave: function() {
+                                                                        removeHideContent(target);
+                                                                        if (target.parent().hasClass('moreNav')) {
+                                                                                target.parents('li.more:first').removeClass('over selected');
+                                                                        }
+                                                                }
+                                                        });
+
+                                                } else {
+                                                        el = target.data('hideContentEl');
+                                                }
+                                                ;
+                                                setTimeout(function() {
+                                                        var elPW = el.outerWidth() - el.width(),
+                                                                minWidth = target.outerWidth() - elPW;
+                                                        if (target.parent().hasClass('moreNav')) {
+                                                                var pleft = target.offset().left - el.outerWidth(),
+                                                                        ptop = target.offset().top;
+                                                        } else {
+                                                                var pleft = target.offset().left,
+                                                                        ptop = target.offset().top + target.outerHeight();
+                                                        }
+                                                        ;
+
+                                                        if (pleft + el.outerWidth() > $(window).width()) {
+                                                                pleft -= pleft + el.outerWidth() - $(window).width();
+                                                        }
+                                                        ;
+                                                        if (ptop + el.outerHeight() > $(window).height()) {
+                                                                ptop = target.offset().top - el.outerHeight();
+                                                        }
+                                                        ;
+
+                                                        el.css({
+                                                                left: pleft,
+                                                                top: ptop,
+                                                                minWidth: minWidth
+                                                        }).show();
+                                                }, 20);
+
+                                        }
+                                },
+                                removeHideContent = function(target) {
+                                        delayRemove = setTimeout(function() {
+                                                target = target ? target : $('li.mouseenter', nav);
+                                                target.removeClass('mouseenter');
+                                                if (target.data('hideContentEl')) {
+                                                        target.data('hideContentEl').hide();
+                                                }
+                                        }, 20);
+
+                                };
+
+                        nav.data('html', nav.html()).delegate('li.more', {
+                                mouseenter: function() {
+                                        $(this).addClass('over selected');
+                                },
+                                mouseleave: function() {
+                                        $(this).removeClass('over selected');
+                                }
+                        }).delegate('li', click, function(e) {
+                                if ($(window).width() < 768) {
+                                        if ($(this).hasClass('selected')) {
+                                                if (nav.hasClass('phone_active')) {
+                                                        nav.removeClass('phone_active');
+                                                        nav.parent().css('zIndex', zIndex);
+                                                } else {
+                                                        e.preventDefault();
+                                                        nav.addClass('phone_active');
+                                                        nav.parent().css('zIndex', 111111);
+                                                }
+                                        }
+                                        ;
+                                        e.stopPropagation();
+                                }
+                                ;
+                        }).delegate('li.sonNav', {
+                                mouseenter: function() {
+                                        if ($(window).width() >= 768) {
+                                                showHideContent($(this));
+                                        }
+                                },
+                                mouseleave: function() {
+                                        if ($(window).width() >= 768) {
+                                                removeHideContent($(this));
+                                        }
+                                }
+                        });
+                        nav.resizeNav = resizeNav;
+                        resizeNav();
+                        $(document).ready(resizeNav);
+                        $(window).resize(resizeNav);
+                        $(document).on(click, function() {
+                                nav.removeClass('phone_active');
+                                nav.parent().css('zIndex', zIndex);
+                                removeHideContent();
+                        });
+                };
+        })(jQuery);
+</script>
+</div></div></div><script>
+        ;(function($){
+             var id="app_E91635262822035611",
+                 $options={"moreText":"\u66f4\u591a","styles":{"style":{"appContent":[]}},"appTempId":"app_E91635262822035611","websiteId":"5462d4ca2034da52198b4568","pageId":"5462d59b2034da5a198b4591"};
+             appInit(id,$options);
+         })(jQuery);
+        </script>
+</div><div id="app_E91635262822035611_style" style="display:none;"></div><div id="el_141083652662713af3_style" style="display:none;"></div></div></div></div></div><div id="el_1410835281525qqxt2_style" style="display:none;"></div></div><div id="el_1410244112906vjdw1_style" style="display:none;"></div></div></div></div></div><div id="el_14102441129072sy82_style" style="display:none;"></div></div>
+</div>
+</div>
+</header>
+<div id="main" class="main" path="main" static="root" data-del="false">
+<div id="mainWrapper" class="mainWrapper" path="wrapper" static="main" data-del="false">
+<div id="mainContainer" class="mainContainer" path="container" static="mainWrapper" data-del="false">
+<div style="display: block;" class="sortablePlaceholder"><div><b></b><i></i></div></div><div id="el_1410245791827c50w6" class="row" role="dragEl" path="row"><div class="rowPatch"><div class="span12"><div class="boxBlock"><div id="el_1410245791826o8ct5" class="elementContainer" path="column"><div column_max479="1" column_480_767="1" column_768_960="no" id="el_141025444172854lp2" class="row" role="dragEl" path="row"><div class="rowPatch"><div class="span3"><div class="boxBlock"><div id="el_1410254441724ehnd1" class="elementContainer" path="column"><div class="appWrapper" data-events='' data-content="json" path="app" role="dragEl" id="app_E90954441905429380" data-appid="article_list" data-type="app"><div class="appMask"></div><div class="appContent"><div class="article_list"><div class="container"> <style type="text/css">
+                .article_list_1 .articleList{
+                    margin:0 40px;
+                         }
+                 .article_list_1 .articleList .latticePad,
+                 .article_list_1 .appPatch{
+                     margin-top:0;
+                     }
+                .article_list_1 .articleList li{                
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        white-space:nowrap;
+                        vertical-align:middle;
+                }
+        </style>
+<div class="article_list_1">
+<div class=" con_header">
+<div class="appTitle">
+<h2>服務</h2>
+</div>
+</div>
+<div class=" con_body">
+<div class="appRow ">
+<div class="appPatch">
+<ul class="articleList">
+<div class="empty">暂无数据</div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div><script>
+        ;(function($){
+             var id="app_E90954441905429380",
+                 $options={"appoint":"2","appointId":"54179bc72034daef158b456f","appointName":"\u5173\u4e8e\u6211\u4eec","count":"12","showPage":"0","order":"0","recommend":"0","news":"0","hot":"0","showAppTitle":"1","appTitle":"\u5173\u4e8e\u6211\u4eec","hrefName":"\u5173\u4e8e\u6211\u4eec","href":"\/c\/default\/pageId\/5462d59b2034da5a198b4591","sole":0,"moreText":"","categoryId":null,"styles":{"template":"1","style":{"appContent":[],"con_header":[],"con_body":[]}},"appTempId":"app_E90954441905429380","pageOptions":{"appoint":"2","appointId":"54179bc72034daef158b456f","appointName":"\u5173\u4e8e\u6211\u4eec","appTitle":"\u5173\u4e8e\u6211\u4eec","hrefName":"\u5173\u4e8e\u6211\u4eec","href":"\/c\/default\/pageId\/5462d59b2034da5a198b4591"},"websiteId":"5462d4ca2034da52198b4568"};
+             appInit(id,$options);
+         })(jQuery);
+        </script>
+</div></div><div id="app_E90954441905429380_style" style="display:none;"></div></div></div></div>
+<div class="span9"><div class="boxBlock"><div id="el_1410254501882b91l3" class="elementContainer" path="column"><div class="appWrapper" data-events='' data-content="json" path="app" role="dragEl" id="app_E90954445145016382" data-appid="article_detail" data-type="app"><div class="appMask"></div><div class="appContent"><div class="article_detail"><div class="container"><style type="text/css">
+        .article_detail form .lattice ul{
+                list-style:none;
+                margin-left:0;}
+        .article_detail form .lattice{
+                margin-left:-20px;
+        }
+        .commentFoot{
+                height:16px !important;
+                line-height:16px !important;
+        }
+</style>
+<div class="article_detail_1">
+<div class="con_header">
+<div class="appTitle">
+<h2>服務</h2>
+</div>
+</div>
+<div class="con_body">
+<div>
+<div class=" articleTime time">
+</div>
+<article class=" articleText">
+<p><img alt="" src="img/laptop.jpg" data-src="img/laptop.jpg" style="height:auto; width:auto" class="responsiveImage"></p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。<br>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。<br>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p><p>我們深信合作雙贏的原則，我們會堅持這樣理念，我們會以你每一項的成功交易作為我們的目標。</p> </article>
+<p><br />
+<a href="javascript:void(0);" role="getShortUrl">获取短网址</a>
+</p>
+<p><br />
+分享到：&nbsp;
+<!-- <a href="http://api.bshare.cn/share/sinaminiblog?url=http%3A%2F%2Fyahui.tuweia.cn%2Fc%2Fdefault%2Fa%2Fview%2Fmod%2Farticle%2Fac%2Farticle_detail%2FarticleId%2F54179bc72034daef158b457e&title=发现一个好东东，大家一起分享：&summary=公司简介&pic=" target="_blank"><img src="icon/sinaminiblog.png" /></a>
+<a href="http://api.bshare.cn/share/renren?url=http%3A%2F%2Fyahui.tuweia.cn%2Fc%2Fdefault%2Fa%2Fview%2Fmod%2Farticle%2Fac%2Farticle_detail%2FarticleId%2F54179bc72034daef158b457e&title=发现一个好东东，大家一起分享：&summary=公司简介&pic=" target="_blank"><img src="icon/sinaminiblog.png" /></a>
+<a href="http://api.bshare.cn/share/kaixin001?url=http%3A%2F%2Fyahui.tuweia.cn%2Fc%2Fdefault%2Fa%2Fview%2Fmod%2Farticle%2Fac%2Farticle_detail%2FarticleId%2F54179bc72034daef158b457e&title=发现一个好东东，大家一起分享：&summary=公司简介&pic=" target="_blank"><img src="icon/sinaminiblog.png" /></a>
+<a href="http://api.bshare.cn/share/douban?url=http%3A%2F%2Fyahui.tuweia.cn%2Fc%2Fdefault%2Fa%2Fview%2Fmod%2Farticle%2Fac%2Farticle_detail%2FarticleId%2F54179bc72034daef158b457e&title=发现一个好东东，大家一起分享：&summary=公司简介&pic=" target="_blank"><img src="icon/sinaminiblog.png" /></a>
+<a href="http://api.bshare.cn/share/weixin?url=http%3A%2F%2Fyahui.tuweia.cn%2Fc%2Fdefault%2Fa%2Fview%2Fmod%2Farticle%2Fac%2Farticle_detail%2FarticleId%2F54179bc72034daef158b457e&title=发现一个好东东，大家一起分享：&summary=公司简介&pic=" target="_blank"><img src="icon/sinaminiblog.png" /></a>
+<a href="http://api.bshare.cn/share/qqmb?url=http%3A%2F%2Fyahui.tuweia.cn%2Fc%2Fdefault%2Fa%2Fview%2Fmod%2Farticle%2Fac%2Farticle_detail%2FarticleId%2F54179bc72034daef158b457e&title=发现一个好东东，大家一起分享：&summary=公司简介&pic=" target="_blank"><img src="icon/sinaminiblog.png" /></a>
+<a href="http://api.bshare.cn/share/qzone?url=http%3A%2F%2Fyahui.tuweia.cn%2Fc%2Fdefault%2Fa%2Fview%2Fmod%2Farticle%2Fac%2Farticle_detail%2FarticleId%2F54179bc72034daef158b457e&title=发现一个好东东，大家一起分享：&summary=公司简介&pic=" target="_blank"> --><img src="icon/sinaminiblog.png" /><!-- </a> -->
+<img src="icon/sinaminiblog.png" />
+<img src="icon/sinaminiblog.png" />
+<img src="icon/sinaminiblog.png" />
+<img src="icon/sinaminiblog.png" />
+<img src="icon/sinaminiblog.png" />
+<img src="icon/sinaminiblog.png" />
+<img src="icon/sinaminiblog.png" />
+<img src="icon/sinaminiblog.png" />
+</p>
+</div>
+</div>
+</div></div></div><script>
+        ;(function($){
+             var id="app_E90954445145016382",
+                 $options={"articleId":"54179bc72034daef158b457e","showAppTitle":"1","appTitle":"","share":"1","showTime":"0","showShortUrl":"1","sole":0,"articleName":"\u516c\u53f8\u7b80\u4ecb","commentStatus":"0","categoryId":null,"styles":{"template":"1","style":{"appContent":[],"con_header":[],"con_body":[]}},"appTempId":"app_E90954445145016382","pageOptions":{"articleId":"54179bc72034daef158b457e","showTime":"0"},"websiteId":"5462d4ca2034da52198b4568"};
+             appInit(id,$options);
+         })(jQuery);
+        </script>
+</div></div><div id="app_E90954445145016382_style" style="display:none;"></div><div id="el_1410254501882b91l3_style" style="display:none;"></div></div></div></div></div></div><div id="el_1410245791826o8ct5_style" style="display:none;"></div></div></div></div></div><div id="el_1410245791827c50w6_style" style="display:none;"></div></div></div>
+</div>
+</div>
+<footer id="footer" class="footer" path="footer" static="root" data-del="false">
+<div id="footerWrapper" class="footerWrapper" path="wrapper" static="footer" data-del="false">
+<div id="footerContainer" class="footerContainer" path="container" static="footerWrapper" data-del="false">
+<div id="el_14102508018357ylh2" class="row" role="dragEl" path="row"><div class="rowPatch"><div class="span12"><div class="boxBlock"><div id="el_14102508018331x321" class="elementContainer" path="column"><div id="el_1410837552168ijb621" class="row" role="dragEl" path="row"><div class="rowPatch"><div class="span12"><div class="boxBlock"><div id="el_1410837552163o7gs20" class="elementContainer" path="column"><div column_max479="1" column_480_767="2" column_768_960="2" id="el_1410837566216caic23" class="row" role="dragEl" path="row"><div class="rowPatch"><div class="span6"><div class="boxBlock"><div id="el_1410837566213n99k22" class="elementContainer" path="column"><div class="appWrapper" data-events='' data-content="json" path="app" role="dragEl" id="app_E91637545274151481" data-appid="copyright" data-type="widget"><div class="appMask"></div><div class="appContent"><div class=""><div class="container">copyright© All Rights Reserved.<p><a href="http://www.technet.com.mo/" target="_blank" title="TechNet 貿易有限公司">TechNet 貿易有限公司</a>
+</p>
+</div></div></div><script>
+        ;(function($){
+             var id="app_E91637545274151481",
+                 $options={"content":"copyright\u00a9 All Rights Reserved.","styles":{"style":{"appContent":[]}},"appTempId":"app_E91637545274151481","websiteId":"5462d4ca2034da52198b4568","pageId":"5462d59b2034da5a198b4591"};
+             appInit(id,$options);
+         })(jQuery);
+        </script>
+</div><div id="app_E91637545274151481_style" style="display:none;"></div><div id="el_1410837566213n99k22_style" style="display:none;"></div></div></div></div>
+<div class="span6"><div class="boxBlock"><div id="el_141083759614458x924" class="elementContainer" path="column"><div class="appWrapper" data-events='' data-content="json" path="app" role="dragEl" id="app_E91637551290997123" data-appid="social" data-type="widget"><div class="appMask"></div><div class="appContent"><div class=""><div class="container"><style>
+        .social_1{
+                padding-top:10px;
+        }
+        .social_1 a,.social_1 a:hover{
+                margin-right:10px;
+                text-decoration:none;
+        }
+        .social_1 a:hover{
+                opacity:0.7;
+        }
+</style>
+<div class="social_1">
+<div class="con_body">
+<div>
+关注我们 : <a href="http://weibo.com/" target="_blank"><img src="icon/xl.png" title="新浪微博" /></a>
+<a href="http://t.qq.com/" target="_blank"><img src="icon/tx.png" title="腾讯微博" /></a>
+<a href="javascript:void(0);" role="wx"><img src="icon/wx.png" title="微信" /></a>
+</div>
+</div>
+</div>
+<script>
+        ;
+        (function($) {
+                var id = 'app_E91637551290997123',
+                        weixin = '',
+                        weixinQrcode = 'http://tuweia.cn/api/qrcode.php?level=L&size=5&data=http%3A%2F%2Fyahui.tuweia.cn';
+                appReady[id] = function() {
+                        var container = $('#' + id + ' div.con_body:first');
+                        container.delegate('a[role]', click, function(e) {
+                                e.preventDefault();
+                                switch ($(this).attr('role')) {
+                                        case 'wx':
+                                                var html = '<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr>';
+                                                if (weixinQrcode) {
+                                                        html += '<td valign="top"><b>微信二维码：</b><br><img src="' + weixinQrcode + '" width="120" height="120" /></td>';
+                                                }
+                                                ;
+                                                if (weixin) {
+                                                        html += '<td valign="top"><b>微信账号：</b><br>' + weixin + '</td>';
+                                                }
+                                                ;
+                                                html += '</tr></table>';
+                                                Alert(html);
+                                                break;
+                                }
+                        });
+                };
+        })(jQuery);
+</script>
+</div></div></div><script>
+        ;(function($){
+             var id="app_E91637551290997123",
+                 $options={"items":["weibo","tweibo","weixin"],"text":"\u5173\u6ce8\u6211\u4eec : ","styles":{"style":{"appContent":[]}},"appTempId":"app_E91637551290997123","websiteId":"5462d4ca2034da52198b4568","pageId":"5462d59b2034da5a198b4591"};
+             appInit(id,$options);
+         })(jQuery);
+        </script>
+</div><div id="app_E91637551290997123_style" style="display:none;"></div><div id="el_141083759614458x924_style" style="display:none;"></div></div></div></div></div><div id="el_1410837566216caic23_style" style="display:none;"></div></div><div id="el_1410837552163o7gs20_style" style="display:none;"></div></div></div></div></div><div id="el_1410837552168ijb621_style" style="display:none;"></div></div><div id="el_14102508018331x321_style" style="display:none;"></div></div></div></div></div><div id="el_14102508018357ylh2_style" style="display:none;"></div></div></div>
+</div>
+</footer>
+</div>
+</div> </div>
+<div id="ad">
+<a href="http://www.technet.com.mo/" target="_blank" title="TechNet 貿易有限公司">TechNet 貿易有限公司</a>
+<style>
+
+                                #layout{
+                                        position:relative;
+                                        z-index:0;
+                                }
+                                #ad{
+                                        position:relative;
+                                        width:100%;
+                                        padding:10px 0; 
+                                        background:#000; 
+                                        color:#ccc; 
+                                        text-align:center;z-index:1;
+                                }
+                                #ad a{
+                                        color:#ccc;
+                                        font-size:16px;
+                                }
+                                #ad a:hover{
+                                        color:#fff;
+                                }
+                                @media (max-width: 767px) {
+                                        #ad a{
+                                                font-size:12px;
+                                        }
+                                }
+                        </style>
+</div>
+<a href="/a/map" style="position:absolute;top:-10000px;">網站地圖</a>
+<a href="http://www.technet.com.mo/" title="TechNet 貿易有限公司" style="position:absolute;top:-10000px;">TechNet 貿易有限公司</a>
+<link href="css/tools.css" rel="stylesheet" type="text/css" />
+<script src="js/tools.js"></script>
+<script>
+                                if ($.browser.msie && $.browser.version < 8) {
+                                        $('<div style="padding:10px;">' + lowBrowserHtml + '</div>').prependTo('body');
+                                }
+                                ;
+
+        </script>
+<script type="text/javascript">
+                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6e73988044da76e283deb3d1e7307cd4' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+<iframe src="http://tuweia.cn/sitecache.html" style="display:none;"></iframe>
+</body>
+</html>
